@@ -1,31 +1,64 @@
-Mona Fakhri Salem — Bioinformatics Portfolio
-About
-I’m a Bioinformatics undergraduate at Cairo University with an interest in using computational methods to explore biological and health-related data.
-I created this portfolio to present my academic interests, selected projects, technical skills, and training in Bioinformatics and related fields.
-Areas of Interest
-Computational Biology
-Biostatistics
-Drug Design
-Biological Sequence Analysis
-Selected Projects
-Molecular Docking: A training capstone completed through I-Mole Lab, with Cairo University support. The project explored docking compounds against the SARS-CoV-2 main protease structure 6LU7.
-Patient Data Analysis: An R-based project involving data cleaning, descriptive summaries, and visualizations.
-Heart Disease Classification: A Python project comparing Logistic Regression, Decision Tree, Random Forest, and XGBoost models.
-Training and Certificates
-My training and certificates include study in Bioinformatics, Drug Design, genomic data science, programming, and machine learning through:
-I-Mole Lab
-Baheya Foundation
-Children’s Cancer Hospital Egypt 57357
-Johns Hopkins University
-University of California San Diego
-Stanford University and DeepLearning.AI
-Skills and Tools
-Bioinformatics: BLAST, biological databases, sequence alignment, phylogenetics, transcriptomics, multi-omics, Biopython
-Programming and Data Analysis: Python, R, Bash, pandas, NumPy, scikit-learn, Jupyter Notebook, Galaxy
-Molecular Modeling and Drug Design: AutoDock Vina, AutoDock, Open Babel, Discovery Studio Visualizer, PDB, PubChem, DrugBank
-Machine Learning: Logistic Regression, Decision Tree, Random Forest, XGBoost
-Website Technologies
-This portfolio website was built using HTML, CSS, JavaScript, Tailwind CSS, and Three.js for the 3D molecular visuals.
-Links
-LinkedIn
-GitHub
+# Mona Fakhri Salem
+
+### Bioinformatics Undergraduate · Cairo University
+
+A personal portfolio presenting my interests, selected academic projects, technical skills, and training in Bioinformatics and related fields.
+
+## About
+
+I’m a Bioinformatics undergraduate at Cairo University interested in applying computational methods to biological and health-related questions. My academic work and training have introduced me to sequence analysis, molecular docking, biostatistics, and machine learning.
+
+## Areas of Interest
+
+- Computational Biology
+- Biostatistics
+- Drug Design
+- Biological Sequence Analysis
+
+## Selected Projects
+
+### Molecular Docking — I-Mole Lab
+
+A training capstone, supported by Cairo University, exploring the docking of six compounds against the SARS-CoV-2 main protease structure (PDB ID: **6LU7**). The project was presented to Cairo University faculty.
+
+**Tools:** AutoDock Vina, AutoDock, Open Babel, Discovery Studio Visualizer, PDB, PubChem, and DrugBank.
+
+### Patient Data Analysis — R
+
+Analyzed a patient-level dataset using filtering, missing-value checks, descriptive summaries, and visualizations. The work explored disease patterns across demographic groups and summarized commuting and daily internet-use distributions.
+
+**Tools:** R.
+
+### Heart Disease Classification — Python
+
+Compared Logistic Regression, Decision Tree, Random Forest, and XGBoost models on a 918-record dataset using train/validation splits and accuracy to review model performance.
+
+**Tools:** Python, pandas, scikit-learn, and XGBoost.
+
+## Training and Certificates
+
+- **Story of Bioinformatics (Basic Bioinformatics) & Drug Design** — I-Mole Lab
+- **Introduction to Bioinformatics** — Baheya Foundation
+- **Introduction to Bioinformatics** — Children’s Cancer Hospital Egypt 57357
+- **Python for Genomic Data Science** — Johns Hopkins University via Coursera
+- **Biology Meets Programming: Bioinformatics for Beginners** — University of California San Diego via Coursera
+- **Advanced Learning Algorithms** — Stanford University and DeepLearning.AI via Coursera
+
+## Skills and Tools
+
+**Bioinformatics and sequence analysis:** Biological databases, BLAST, sequence alignment, phylogenetics, transcriptomics, multi-omics, and Biopython.
+
+**Programming and data analysis:** Python, R, Bash, pandas, NumPy, Jupyter Notebook, and Galaxy.
+
+**Molecular modeling and drug design:** Molecular docking, AutoDock Vina, AutoDock, Open Babel, and Discovery Studio Visualizer.
+
+**Statistics and machine learning:** Biostatistics, descriptive statistics, Logistic Regression, Decision Tree, Random Forest, XGBoost, and scikit-learn.
+
+## Portfolio Technologies
+
+This portfolio website was built with HTML, CSS, JavaScript, and Tailwind CSS. Three.js is used for the 3D molecular visualizations.
+
+## Links
+
+- [LinkedIn](https://www.linkedin.com/in/monafakhri )
+- [GitHub](https://github.com/fakhrisalem )
