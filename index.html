@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071a1d" />
+    <meta name="description" content="Mona Fakhri Salem — Bioinformatics portfolio featuring molecular docking, computational biology, biostatistics, and machine learning projects." />
+    <title>Mona Fakhri Salem — Bioinformatics Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="./images/brand-mark.svg" />
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <link rel="stylesheet" href="./css/site.css" />
+    <script>
+      (() => {
+        try {
+          const saved = localStorage.getItem('mona-theme');
+          if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved;
+        } catch (_) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="nav-wrap mx-auto max-w-7xl px-5 sm:px-8">
+        <a class="brand" href="#top" aria-label="Mona Fakhri Salem, home">
+          <span class="brand-mark"><img src="./images/brand-mark.svg" alt="" width="38" height="38" /></span>
+          <span class="brand-copy"><strong>MONA FAKHRI</strong><small>Bioinformatics / Cairo</small></span>
+        </a>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a href="#work">Work</a>
+          <a href="#training">Training</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a class="nav-contact" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a>
+        </nav>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8a8.6 8.6 0 1 0 11.6 11.6Z"/><path d="M16.5 3v4M14.5 5h4M21 8v3M19.5 9.5h3"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+          </button>
+          <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu"><span></span><span></span></button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero mx-auto max-w-7xl px-5 sm:px-8" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> BIOINFORMATICS · CAIRO, EGYPT</div>
+          <h1 id="hero-title">Where biology<br /><em>meets computation.</em></h1>
+          <p class="hero-lede">I’m <strong>Mona Fakhri Salem</strong>, a Bioinformatics undergraduate at Cairo University. I explore biological questions through sequence analysis, biostatistics, molecular docking, and data-driven methods.</p>
+          <div class="hero-interests" aria-label="Research interests">
+            <span>Computational biology</span><span>Biostatistics</span><span>Drug design</span><span>Sequence analysis</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
+            <a class="button button-outline" href="./files/Mona_Fakhri_Salem_Academic_CV.pdf" download="Mona_Fakhri_Salem_Academic_CV.pdf">Download CV PDF <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="mailto:monafakhri50@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-footnote"><span class="mono">01 / 04</span><span>Biology, translated into data.</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Animated molecular visualization with a replaceable portrait area">
+          <div class="scene-frame" id="scene-frame">
+            <canvas id="molecule-canvas" aria-label="Decorative 3D animated DNA helix" role="img"></canvas>
+            <div class="scene-fallback" aria-hidden="true"><span class="fallback-helix">⌁</span><span>SEQUENCE / STRUCTURE / SIGNAL</span></div>
+            <div class="scene-caption"><span class="caption-pip"></span> MOLECULAR EXPLORATION <span class="mono">3D</span></div>
+            <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false" aria-label="Pause molecular animation">Ⅱ <span>Pause motion</span></button>
+            <div class="scene-coordinate mono">BIOINFORMATICS<br />IN SILICO</div>
+          </div>
+          <div class="portrait-card" id="portrait-slot" aria-label="Portrait of Mona Fakhri Salem">
+            <img class="portrait-photo" src="./images/portrait.jpg" alt="Mona Fakhri Salem" loading="eager" decoding="async" />
+            <div class="portrait-caption"><span>PROFILE / 01</span><strong>Mona Fakhri Salem</strong><small>Cairo University · Bioinformatics</small></div>
+            <span class="portrait-index" aria-hidden="true">♠</span>
+          </div>
+          <span class="visual-note note-top mono">PDB<br />6LU7</span>
+          <span class="visual-note note-side mono">A · T<br />G · C</span>
+        </div>
+        <div class="hero-index mono" aria-hidden="true">MF / BIOINFO</div>
+      </section>
+
+      <section class="signal-strip" aria-label="Portfolio at a glance">
+        <div class="signal-inner mx-auto max-w-7xl px-5 sm:px-8">
+          <div class="signal-label mono">FIELD NOTES <span>—</span> 01</div>
+          <div class="signal-item"><strong>03</strong><span>Selected projects</span></div>
+          <div class="signal-item"><strong>06</strong><span>Certificates</span></div>
+          <div class="signal-item"><strong>04</strong><span>Research interests</span></div>
+          <div class="signal-sequence mono" aria-hidden="true">ATG · CCA · GTT · AAG</div>
+        </div>
+      </section>
+
+      <section class="section work-section mx-auto max-w-7xl px-5 sm:px-8" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div><div class="section-kicker"><span class="mono">02</span> / SELECTED WORK</div><h2 id="work-title">Projects with<br /><em>biological context.</em></h2></div>
+          <p>Three projects show complementary computational workflows: protein–ligand docking, descriptive health-data analysis in R, and heart-disease model comparison in Python. Each card explains its methods and tools, while keeping computational findings distinct from experimental or clinical conclusions.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-featured tilt-card" data-tilt>
+            <div class="project-card-art art-docking">
+              <img class="project-art-image" src="./images/projects/docking.jpg" alt="Conceptual 3D illustration of a protein pocket and ligand; not the actual 6LU7 docking result." loading="lazy" decoding="async" width="1280" height="960" />
+              <div class="art-label mono">CONCEPTUAL 3D · DOCKING</div>
+              <div class="card-corner card-corner-top"><b>A</b><span>♠</span></div><div class="card-corner card-corner-bottom"><b>A</b><span>♠</span></div>
+            </div>
+            <div class="project-content">
+              <div class="project-type"><span class="type-dot type-mint"></span> MOLECULAR DOCKING <span class="mono">· 01</span></div>
+              <h3>SARS-CoV-2 main protease<br />compound docking</h3>
+              <p class="project-meta">I-Mole Lab training capstone · Cairo University support</p>
+              <p>Prepared protein and ligand structures, then docked six compounds against the main protease structure 6LU7. The project was presented to Cairo University faculty.</p>
+              <div class="project-detail-grid"><div><small>COMPOUNDS</small><strong>6 compounds</strong><span>Cetirizine · N3 · Ebselen · Remdesivir · DMSO · Nitrobenzaldehyde</span></div><div><small>WORKFLOW</small><strong>Docking & interaction review</strong><span>AutoDock Vina · AutoDock · Open Babel · Discovery Studio Visualizer</span></div></div>
+              <div class="tag-row"><span>PDB</span><span>PubChem</span><span>DrugBank</span><span>Protein–ligand</span></div>
+              <p class="project-note">Reported lowest docking score: −6.3 for ebselen and remdesivir. A computational score is not experimental evidence of efficacy.</p>
+              <div class="project-links"><a class="project-link" href="https://github.com/fakhrisalem" target="_blank" rel="noopener noreferrer" aria-label="Open Mona Fakhri Salem’s GitHub profile">GitHub profile <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+          <article class="project-card tilt-card" data-tilt>
+            <div class="project-card-art art-r">
+              <img class="project-art-image" src="./images/projects/patient-data-r.jpg" alt="Conceptual 3D visualization of statistical data layers; no patient-level data is shown." loading="lazy" decoding="async" width="1280" height="960" />
+              <div class="art-label mono">CONCEPTUAL 3D · R ANALYSIS</div><div class="card-corner card-corner-top"><b>R</b><span>♦</span></div><div class="card-corner card-corner-bottom"><b>R</b><span>♦</span></div>
+            </div>
+            <div class="project-content">
+              <div class="project-type"><span class="type-dot type-coral"></span> DATA ANALYSIS <span class="mono">· 02</span></div>
+              <h3>Patient demographics<br />& health data</h3>
+              <p>Explored a patient-level dataset in R through filtering, missing-value checks, descriptive summaries, and visualizations. Compared disease patterns across demographic groups and summarized commuting and daily internet-use distributions.</p>
+              <div class="tag-row"><span>R</span><span>Data cleaning</span><span>Descriptive statistics</span><span>Visualization</span></div>
+              <a class="project-link" href="https://github.com/fakhrisalem/dataset-of-a-patient" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project-card tilt-card" data-tilt>
+            <div class="project-card-art art-ml">
+              <img class="project-art-image" src="./images/projects/heart-disease-ml.jpg" alt="Conceptual 3D heart and classifier-tree illustration; not a clinical result." loading="lazy" decoding="async" width="1280" height="960" />
+              <div class="art-label mono">CONCEPTUAL 3D · CLASSIFICATION</div><div class="card-corner card-corner-top"><b>ML</b><span>♥</span></div><div class="card-corner card-corner-bottom"><b>ML</b><span>♥</span></div>
+            </div>
+            <div class="project-content">
+              <div class="project-type"><span class="type-dot type-lime"></span> MACHINE LEARNING <span class="mono">· 03</span></div>
+              <h3>Heart disease<br />classification</h3>
+              <p>Compared Logistic Regression, Decision Tree, Random Forest, and XGBoost on a 918-record dataset. Used train/validation splits and accuracy to review model performance and tree settings.</p>
+              <div class="tag-row"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>XGBoost</span></div>
+              <div class="project-links"><a class="project-link" href="https://github.com/fakhrisalem/Logistic-Regression_CVDs." target="_blank" rel="noopener noreferrer">Logistic regression <span aria-hidden="true">↗</span></a><a class="project-link" href="https://github.com/fakhrisalem/DecisionTree_CVDs" target="_blank" rel="noopener noreferrer">Decision tree <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="training-section" id="training" aria-labelledby="training-title">
+        <div class="section mx-auto max-w-7xl px-5 sm:px-8">
+          <div class="section-heading training-heading">
+            <div><div class="section-kicker"><span class="mono">03</span> / LEARNING PATH</div><h2 id="training-title">Training &<br /><em>certificates.</em></h2></div>
+            <p>Six certificates document focused study in foundational bioinformatics, biological sequence methods, genomic data, drug design, and machine learning. Each card lists its provider and date; select a certificate image to open the original scan.</p>
+          </div>
+          <div class="certificate-grid">
+            <article class="certificate-card cert-featured">
+              <a class="certificate-image-link" href="./images/certificates/01-i-mole-bioinformatics-drug-design.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open original I-Mole Lab certificate">
+                <img class="certificate-image" src="./images/certificates/01-i-mole-bioinformatics-drug-design.jpeg" alt="Original I-Mole Lab certificate for Story of Bioinformatics and Drug Design" loading="lazy" decoding="async" width="1167" height="834" />
+                <span class="cert-index mono" aria-hidden="true">01 / ♣</span><span class="cert-view" aria-hidden="true">OPEN ORIGINAL ↗</span>
+              </a>
+              <div class="certificate-info"><h3 class="cert-name">Story of Bioinformatics <span>(Basic Bioinformatics) & Drug Design</span></h3><p class="cert-issuer">I-Mole Lab</p><p class="cert-date mono">14 SEP 2024</p><p class="cert-focus">Includes the related molecular-docking project presented to Cairo University faculty.</p></div>
+            </article>
+            <article class="certificate-card">
+              <a class="certificate-image-link" href="./images/certificates/02-baheya-introduction-to-bioinformatics.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open original Baheya Foundation certificate">
+                <img class="certificate-image" src="./images/certificates/02-baheya-introduction-to-bioinformatics.jpeg" alt="Original Baheya Foundation Introduction to Bioinformatics certificate" loading="lazy" decoding="async" width="800" height="800" />
+                <span class="cert-index mono" aria-hidden="true">02 / ♦</span><span class="cert-view" aria-hidden="true">OPEN ORIGINAL ↗</span>
+              </a>
+              <div class="certificate-info"><h3 class="cert-name">Introduction to Bioinformatics</h3><p class="cert-issuer">Baheya Foundation</p><p class="cert-date mono">15 JUL — 05 AUG 2024</p><p class="cert-focus">Databases · BLAST · Bash · R · transcriptomics · multi-omics</p></div>
+            </article>
+            <article class="certificate-card">
+              <a class="certificate-image-link" href="./images/certificates/03-57357-introduction-to-bioinformatics.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open original Children’s Cancer Hospital Egypt 57357 certificate">
+                <img class="certificate-image" src="./images/certificates/03-57357-introduction-to-bioinformatics.jpeg" alt="Original Children’s Cancer Hospital Egypt 57357 Introduction to Bioinformatics certificate" loading="lazy" decoding="async" width="1286" height="909" />
+                <span class="cert-index mono" aria-hidden="true">03 / ♥</span><span class="cert-view" aria-hidden="true">OPEN ORIGINAL ↗</span>
+              </a>
+              <div class="certificate-info"><h3 class="cert-name">Introduction to Bioinformatics</h3><p class="cert-issuer">Children’s Cancer Hospital Egypt 57357</p><p class="cert-date mono">13 AUG — 20 SEP 2023 · 48 HOURS</p><p class="cert-focus">Biological databases · sequence alignment · BLAST · Galaxy · phylogenetics</p></div>
+            </article>
+            <article class="certificate-card">
+              <a class="certificate-image-link" href="./images/certificates/05-python-for-genomic-data-science.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open original Johns Hopkins University certificate">
+                <img class="certificate-image" src="./images/certificates/05-python-for-genomic-data-science.jpeg" alt="Original Johns Hopkins University Python for Genomic Data Science certificate" loading="lazy" decoding="async" width="1287" height="994" />
+                <span class="cert-index mono" aria-hidden="true">04 / ♠</span><span class="cert-view" aria-hidden="true">OPEN ORIGINAL ↗</span>
+              </a>
+              <div class="certificate-info"><h3 class="cert-name">Python for Genomic Data Science</h3><p class="cert-issuer">Johns Hopkins University · Coursera</p><p class="cert-date mono">30 JAN 2024</p><p class="cert-focus">Genomic data science · Python</p></div>
+            </article>
+            <article class="certificate-card">
+              <a class="certificate-image-link" href="./images/certificates/04-biology-meets-programming.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open original University of California San Diego certificate">
+                <img class="certificate-image" src="./images/certificates/04-biology-meets-programming.jpeg" alt="Original University of California San Diego Biology Meets Programming certificate" loading="lazy" decoding="async" width="1287" height="994" />
+                <span class="cert-index mono" aria-hidden="true">05 / ♣</span><span class="cert-view" aria-hidden="true">OPEN ORIGINAL ↗</span>
+              </a>
+              <div class="certificate-info"><h3 class="cert-name">Biology Meets Programming: Bioinformatics for Beginners</h3><p class="cert-issuer">University of California San Diego · Coursera</p><p class="cert-date mono">20 OCT 2023</p><p class="cert-focus">Bioinformatics fundamentals · programming</p></div>
+            </article>
+            <article class="certificate-card">
+              <a class="certificate-image-link" href="./images/certificates/06-advanced-learning-algorithms.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open original Stanford University Advanced Learning Algorithms certificate">
+                <img class="certificate-image" src="./images/certificates/06-advanced-learning-algorithms.jpeg" alt="Original Stanford Online and DeepLearning.AI Advanced Learning Algorithms certificate" loading="lazy" decoding="async" width="1287" height="994" />
+                <span class="cert-index mono" aria-hidden="true">06 / ♦</span><span class="cert-view" aria-hidden="true">OPEN ORIGINAL ↗</span>
+              </a>
+              <div class="certificate-info"><h3 class="cert-name">Advanced Learning Algorithms</h3><p class="cert-issuer">Stanford University & DeepLearning.AI · Coursera</p><p class="cert-date mono">20 FEB 2024</p><p class="cert-focus">Advanced learning algorithms</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills-section mx-auto max-w-7xl px-5 sm:px-8" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <div><div class="section-kicker"><span class="mono">04</span> / TOOLKIT</div><h2 id="skills-title">Methods, tools,<br /><em>and languages.</em></h2></div>
+          <p>My toolkit spans biological databases and sequence analysis, statistical work in R, programming in Python, and software used for molecular docking and visualization. These methods come from coursework, training, and academic projects.</p>
+        </div>
+        <div class="skills-deck">
+          <article class="skill-card">
+            <div class="skill-card-header"><span class="skill-card-index mono">01 / BIOINFORMATICS</span><span class="skill-suit" aria-hidden="true">♠</span></div>
+            <div class="skill-card-intro"><h3>Bioinformatics &<br />sequence analysis</h3><p class="skill-card-copy">Biological data resources and sequence-focused methods from coursework and training.</p></div>
+            <ul class="skill-tags" aria-label="Bioinformatics and sequence skills"><li>Biological databases</li><li>BLAST</li><li>Sequence alignment</li><li>Transcriptomics</li><li>Multi-omics</li><li>Phylogenetics</li><li>Galaxy</li></ul>
+            <div class="skill-card-footer"><span class="mono">LEARNING</span><a href="#training">Training certificates <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-card-header"><span class="skill-card-index mono">02 / COMPUTATION</span><span class="skill-suit" aria-hidden="true">♦</span></div>
+            <div class="skill-card-intro"><h3>Programming &<br />data workflows</h3><p class="skill-card-copy">Languages, libraries, and analysis steps represented in my training and academic work.</p></div>
+            <ul class="skill-tags" aria-label="Programming and data analysis skills"><li>Python</li><li>R</li><li>Bash</li><li>Biopython</li><li>pandas</li><li>NumPy</li><li>Jupyter Notebook</li><li>Data cleaning</li><li>Exploratory analysis</li><li>Visualization</li></ul>
+            <div class="skill-card-footer"><span class="mono">CODE + ANALYSIS</span><a href="#work">Selected projects <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-card-header"><span class="skill-card-index mono">03 / STRUCTURE</span><span class="skill-suit" aria-hidden="true">♣</span></div>
+            <div class="skill-card-intro"><h3>Molecular modeling<br />& drug design</h3><p class="skill-card-copy">Structure preparation, docking, and interaction review in the I-Mole Lab capstone.</p></div>
+            <ul class="skill-tags" aria-label="Molecular modeling skills"><li>Molecular docking</li><li>PDB</li><li>PubChem</li><li>DrugBank</li><li>AutoDock Vina</li><li>AutoDock</li><li>Open Babel</li><li>Discovery Studio Visualizer</li></ul>
+            <div class="skill-card-footer"><span class="mono">CAPSTONE</span><a href="#work">Molecular docking <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-card-header"><span class="skill-card-index mono">04 / ANALYSIS</span><span class="skill-suit" aria-hidden="true">♥</span></div>
+            <div class="skill-card-intro"><h3>Biostatistics &<br />machine learning</h3><p class="skill-card-copy">Statistical summaries and classifier comparisons reflected in my R and Python projects.</p></div>
+            <ul class="skill-tags" aria-label="Biostatistics and machine learning skills"><li>Biostatistics</li><li>Statistical summaries</li><li>Classification</li><li>scikit-learn</li><li>Logistic Regression</li><li>Decision Tree</li><li>Random Forest</li><li>XGBoost</li><li>Train/validation splits</li><li>Accuracy</li></ul>
+            <div class="skill-card-footer"><span class="mono">MODEL COMPARISON</span><a href="#work">Heart-disease project <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="focus-section" id="about" aria-labelledby="about-title">
+        <div class="focus-inner mx-auto max-w-7xl px-5 sm:px-8">
+          <div class="focus-copy">
+            <div class="section-kicker"><span class="mono">05</span> / AREAS OF INTEREST</div>
+            <h2 id="about-title">A broad lens.<br /><em>A computational toolkit.</em></h2>
+            <p>I’m studying Bioinformatics at Cairo University and am especially interested in how computational methods can help explore biological sequences, molecular structures, and health data. My coursework and training connect these questions with biostatistics, drug design, and machine learning.</p>
+          </div>
+          <div class="interest-orbit" aria-label="Four Bioinformatics interests arranged around a 3D molecular illustration">
+            <div class="orbit-track orbit-track-one" aria-hidden="true"></div>
+            <div class="orbit-track orbit-track-two" aria-hidden="true"></div>
+            <article class="interest-node interest-node-one">
+              <div class="interest-node-heading"><span class="interest-symbol mono">01 / COMPUTE</span><svg class="interest-icon" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="3"/><ellipse cx="20" cy="20" rx="15" ry="6"/><ellipse cx="20" cy="20" rx="15" ry="6" transform="rotate(60 20 20)"/><ellipse cx="20" cy="20" rx="15" ry="6" transform="rotate(120 20 20)"/></svg></div>
+              <h3>Computational <span class="ink-underline">biology</span></h3>
+              <p>Explore biological questions through computational methods and biological data.</p>
+            </article>
+            <article class="interest-node interest-node-two">
+              <div class="interest-node-heading"><span class="interest-symbol mono">02 / STATISTICS</span><svg class="interest-icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M7 32h27M10 29V20h5v9M19 29V13h5v16M28 29V7h5v22"/><path d="m9 16 8-5 7 3 8-8"/></svg></div>
+              <h3><span class="ink-underline">Biostatistics</span></h3>
+              <p>Summarize health-related datasets with statistical reasoning and clear analysis.</p>
+            </article>
+            <div class="interest-core">
+              <div class="interest-core-halo" aria-hidden="true"></div>
+              <img src="./images/bioinformatics-interest.webp" alt="Illustrative 3D DNA and protein molecular structure" loading="lazy" decoding="async" />
+              <span class="interest-core-label mono">BIOLOGY × COMPUTATION</span>
+            </div>
+            <article class="interest-node interest-node-three">
+              <div class="interest-node-heading"><span class="interest-symbol mono">03 / MOLECULES</span><svg class="interest-icon" viewBox="0 0 40 40" aria-hidden="true"><path d="m11 11 9-5 10 6v11l-10 6-9-6zM20 6v11m10-5-10 5m0 0v12m-9-19 9 7m-9 4 9-5 10 6"/><circle cx="11" cy="11" r="2"/><circle cx="30" cy="12" r="2"/><circle cx="20" cy="29" r="2"/></svg></div>
+              <h3><span class="ink-underline">Drug design</span></h3>
+              <p>Explore ligand–protein interactions through in-silico docking and structure tools.</p>
+            </article>
+            <article class="interest-node interest-node-four">
+              <div class="interest-node-heading"><span class="interest-symbol mono">04 / SEQUENCES</span><svg class="interest-icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M11 5c0 8 18 8 18 15S11 28 11 35M29 5c0 8-18 8-18 15s18 8 18 15M14 9h12m-16 7h20m-20 8h20m-16 7h12"/></svg></div>
+              <h3>Biological <span class="ink-underline">sequence analysis</span></h3>
+              <p>Study sequence alignment, genomic data, and the patterns that connect them.</p>
+            </article>
+          </div>
+        </div>
+        <div class="focus-sequence mono" aria-hidden="true">ATCG · GCTA · TATA · CGAT · AAGC · GTTA · TCGG · CCTA</div>
+      </section>
+
+      <section class="contact-section mx-auto max-w-7xl px-5 sm:px-8" id="contact" aria-labelledby="contact-title">
+        <div class="contact-panel">
+          <div class="contact-stamp mono">CONTACT / MF</div>
+          <div class="contact-copy"><div class="section-kicker"><span class="mono">06</span> / OPEN CHANNEL</div><h2 id="contact-title">Let’s connect<br /><em>over good questions.</em></h2><p>For conversations about my Bioinformatics projects, training, or academic collaboration, please reach out by email or connect with me on LinkedIn.</p></div>
+          <div class="contact-links"><a class="contact-email" href="mailto:monafakhri50@gmail.com">monafakhri50@gmail.com <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/monafakhri" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/fakhrisalem" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+          <div class="contact-orbit" aria-hidden="true"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer mx-auto max-w-7xl px-5 sm:px-8">
+      <div class="footer-main">
+        <div class="footer-brand-block">
+          <a class="footer-brand" href="#top" aria-label="Mona Fakhri Salem, back to top">MF<span>·</span></a>
+          <div class="footer-intro"><strong>Mona Fakhri Salem</strong><p>Bioinformatics · Cairo University</p></div>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <span class="footer-heading mono">EXPLORE</span>
+          <a href="#work">Selected work</a><a href="#training">Training & certificates</a><a href="#skills">Technical skills</a><a href="#about">Areas of interest</a>
+        </nav>
+        <div class="footer-connect">
+          <span class="footer-heading mono">LET’S CONNECT</span>
+          <a href="mailto:monafakhri50@gmail.com">Email Mona <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/monafakhri" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/fakhrisalem" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom"><span class="mono">© <span id="year">2026</span> MONA FAKHRI SALEM</span><span class="footer-note">Biology, translated into data.</span><a class="back-top" href="#top">Back to top ↑</a></div>
+    </footer>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
